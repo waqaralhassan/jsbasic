@@ -1,5 +1,5 @@
  {
     "firstNumber":12,
     "secondNumber":4,
-    "operations":"addition"
+    "operations":["addition", "multiplication", "subtraction","division","ooo"]
 }
