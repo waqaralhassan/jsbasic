@@ -50,10 +50,43 @@ const person = {
 
 // -------------------remedy: copy the object instead of mere equal to-------------------------
 
-const person2 = {
-  ...person,
-};
-person2.firstName = "abc";
-console.log(person.firstName, person2.firstName);
-const name = person2.fullName();
-console.log(name);
+// const person2 = {
+//   ...person,
+// };
+// person2.firstName = "abc";
+// console.log(person.firstName, person2.firstName);
+// const name = person2.fullName();
+
+// ES6 sytnax : spread operator:
+let arr1 = [1, 2, 3, 4, 778, 080, 779, 808];
+let arr2 = [5, 6, 7, 8];
+
+// let arr3 = [1, 2, 3, 4] + [5, 6, 7, 8]; // string concatinate
+
+let [firstNum, secNum, ...thirdNum] = [...arr1]; // rest operator
+console.log(firstNum, secNum, thirdNum);
+
+// let testArr = [...arr1, ...arr2];
+// console.log(testArr);
+
+// let arr4 = [...arr1]; // copy through spread operator
+
+// ----bad way of array concatination:
+// let testArr = [];
+// const arr1Len = arr1.length - 1;
+// const arr2Len = arr2.length - 1;
+// const arr3Len = arr1Len + arr2Len + 1;
+
+// let temp = 0;
+// for (let i = 0; i <= arr3Len; i++) {
+//   if (i <= 3) {
+//     testArr.push(arr1[i]);
+//   } else {
+//     testArr.push(arr2[temp]);
+//     temp++;
+//   }
+// }
+// console.log(testArr);
+
+// todo: employ rest operator in function call as well in func param:
+// and concatination of objs via spread operator:
