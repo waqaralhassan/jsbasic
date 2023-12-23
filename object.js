@@ -58,13 +58,13 @@ const person = {
 // const name = person2.fullName();
 
 // ES6 sytnax : spread operator:
-let arr1 = [1, 2, 3, 4, 778, 080, 779, 808];
-let arr2 = [5, 6, 7, 8];
+// let arr1 = [1, 2, 3, 4, 778, 080, 779, 808];
+// let arr2 = [5, 6, 7, 8];
 
 // let arr3 = [1, 2, 3, 4] + [5, 6, 7, 8]; // string concatinate
 
-let [firstNum, secNum, ...thirdNum] = [...arr1]; // rest operator
-console.log(firstNum, secNum, thirdNum);
+// let [firstNum, secNum, ...thirdNum] = [...arr1]; // rest operator
+// console.log(firstNum, secNum, thirdNum);
 
 // let testArr = [...arr1, ...arr2];
 // console.log(testArr);
@@ -88,5 +88,26 @@ console.log(firstNum, secNum, thirdNum);
 // }
 // console.log(testArr);
 
+// reason for rest operator:
+// let testarr1 = [1, 2, 3, 4, 5, 6, 7];
+// let numFirst = testarr1[0];
+// let numSec = testarr1[1];
+
+// let tempArr = [];
+// for (let i = 2; i <= testarr1.length - 1; i++) {
+//   tempArr.push(testarr1[i]);
+// }
+
+// const [numFirst, numSec, ...tempArr] = testarr1;
+// console.log(numFirst, numSec, tempArr);
+
 // todo: employ rest operator in function call as well in func param:
 // and concatination of objs via spread operator:
+
+const testFunc = (curialPara, ...params) => {
+  //rest operator
+  console.log("params ->", curialPara);
+  console.log("optional params ->", params);
+};
+
+testFunc(45.78, 78.98);
