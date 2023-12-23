@@ -104,10 +104,30 @@ const person = {
 // todo: employ rest operator in function call as well in func param:
 // and concatination of objs via spread operator:
 
-const testFunc = (curialPara, ...params) => {
-  //rest operator
-  console.log("params ->", curialPara);
-  console.log("optional params ->", params);
+// const testFunc = (curialPara, ...params) => {
+//   //rest operator
+//   console.log("params ->", curialPara);
+//   console.log("optional params ->", params);
+// };
+
+// testFunc(45.78, 78.98);
+
+// 1- spread:
+// use case of spread operator: swallow-copy:
+let obj1 = {
+  firstName: "abrar",
+  lastName: "zahid",
 };
 
-testFunc(45.78, 78.98);
+// let obj2 = { ...obj1 };
+// obj2.firstName = "ttt";
+// console.log("obj1 ->", obj1);
+// console.log("obj2 ->", obj2);
+
+// use case 2 concatination:
+let obj3 = {
+  profession: "engineer",
+  0: "testing",
+};
+let concatObj = { ...obj1, ...obj3 };
+console.log(concatObj, concatObj[0]);
