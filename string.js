@@ -1,14 +1,22 @@
-const str = "testisy";
+// const str = "testisy";
 
-console.log(str.length);
-console.log(str[0]);
+// console.log(str.length);
+// console.log(str[0]);
 
-const modifiedStr = str.slice(0, 4);
-console.log("sliced string -> ", modifiedStr);
-console.log(modifiedStr.length, str);
+// const modifiedStr = str.slice(0, 4);
+// console.log("sliced string -> ", modifiedStr);
+// console.log(modifiedStr.length, str);
 
-const negaitveStr = str.slice(2, -2);
-console.log("negativeTest->", negaitveStr);
+// const negaitveStr = str.slice(2, -2);
+// console.log("negativeTest->", negaitveStr);
 
-const subStr = str.substring(3, 1);
-console.log("subStr ->", subStr);
+// const subStr = str.substring(3, 1);
+// console.log("subStr ->", subStr);
+
+// const str = "this is a testing. test";
+// const newStr = str.replace("t", "$");
+// console.log(newStr);
+
+const str = "This is a testing. test";
+const newStr = str.replaceAll(/t/i, "$");
+console.log(newStr);
