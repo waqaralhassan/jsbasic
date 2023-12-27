@@ -119,15 +119,20 @@ let obj1 = {
   lastName: "zahid",
 };
 
+const { firstName, lastName, age } = obj1; // desturcting
+console.log("first name -> ", firstName);
+console.log("first name -> ", lastName);
+console.log("first name -> ", age);
+
 // let obj2 = { ...obj1 };
 // obj2.firstName = "ttt";
 // console.log("obj1 ->", obj1);
 // console.log("obj2 ->", obj2);
 
 // use case 2 concatination:
-let obj3 = {
-  profession: "engineer",
-  0: "testing",
-};
-let concatObj = { ...obj1, ...obj3 };
-console.log(concatObj, concatObj[0]);
+// let obj3 = {
+//   profession: "engineer",
+//   0: "testing",
+// };
+// let concatObj = { ...obj1, ...obj3 };
+// console.log(concatObj, concatObj[0]);
