@@ -47,6 +47,40 @@
 // const firstName = fullName.split("_"); // returns an array.
 // console.log(firstName);
 
-const str1 = "Abrar"; // frontend
-const str2 = "abrar"; // DB database
-console.log(str1 === str2);
+// const str1 = "Abrar"; // frontend
+// const str2 = "abrar"; // DB database
+// console.log(str1 === str2);
+
+// const str = "this is test test";
+// const newstr = str.indexOf("t");
+// console.log(newstr);
+
+// const str = "this is a test";
+// const index = str.search("i");
+// console.log(index);
+
+// let str = "The rain in SPAIN stays mainly in the plain. this is test ain";
+// console.log(Array.from(str.matchAll(/ain/gi))); // returns an iterator.
+// 1- string literal:
+// "test", 'test', `test ${var}`
+
+// 2- regular expression reg-ex:
+// /expression/modifier
+
+// let text = "Hello world, welcome to the universe.";
+// console.log(text.includes("world"));
+
+// const str = "abrar";
+// const arr = ["e", "r"];
+// // console.log(`my name is ${Array.from(str.matchAll(/r/gi))}`); // variable substitution
+// console.log(`my name is ${arr}`); // variable substitution
+
+// const x = 10;
+// const y = "Apple";
+// console.log(isNaN(x / y));
+
+// console.log(-2 / 0);
+
+// const x = 2;
+// const y = "2";
+// console.log(x === y); // recommended.
